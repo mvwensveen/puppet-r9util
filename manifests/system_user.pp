@@ -122,7 +122,7 @@ define r9util::system_user(
 
       $ssh_authkey_defaults = {
         user    => $user,
-        type    => 'ssh-rsa',
+        'type'    => 'ssh-rsa',
       }
 
       create_resources('ssh_authorized_key',$auth_keys,$ssh_authkey_defaults)
